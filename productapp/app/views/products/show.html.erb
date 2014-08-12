@@ -1,0 +1,21 @@
+
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+  			<th>Name</th>
+  			<th>Description</th>
+  			<th>Price</th>
+  		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+   			<td><%= @product.name %></td>
+   			<td><%= @product.description %></td>
+   			<td><%= number_to_currency(@product.price) %></td>
+		</tr>
+	</tbody>
+</table>
+<%= link_to 'Edit', edit_product_path(@product), class: "btn btn btn-large btn-primary" %> 
+<%= link_to 'Cancel', products_path, class: "btn btn btn-large btn-primary" %>

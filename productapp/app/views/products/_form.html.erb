@@ -1,0 +1,13 @@
+<%= simple_form_for(@product) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :name, class: "form-control txt"%>
+    <%= f.input :description, class: "form-control area"%>
+    <%= f.input :price,  class: "form-control txt"%>
+  </div>
+
+  <div class="form-group">
+    <%= f.button :submit, class: "btn btn btn-large btn-primary" %>
+  </div>
+<% end %>
